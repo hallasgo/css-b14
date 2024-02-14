@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    padding: 20px 50px;
+}
+
+.main-content h1{
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.grid-container{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    background-color: yellow;
+}
+
+.grid-item{
+    border: 2px solid red;
+    height: 100px;
+    background-color: white;
+    padding: 5px;
+}
+
+.grid-item h2{
+    font-size: 16px;
+}
+
+.grid-item a{
+    margin-top: 10px;
+}
+
+@media(max-width: 1000px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+
+    .grid-item a{
+        margin-top: 10px;
+    }
+}
